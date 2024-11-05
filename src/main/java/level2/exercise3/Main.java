@@ -1,10 +1,5 @@
 package level2.exercise3;
 
-@FunctionalInterface
-interface Operation {
-    float calc(float a, float b);
-}
-
 public class Main {
     public static void main(String[] args) {
         Operation suma = (a, b) -> a + b;

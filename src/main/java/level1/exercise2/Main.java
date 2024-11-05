@@ -9,7 +9,7 @@ public class Main {
         List<String> strings = Arrays.asList("hello", "world", "and", "java", "programmers");
 
         List<String> result = strings.stream()
-                .filter(s -> s.contains("o") && s.length() > 5)
+                .filter(s -> s.toLowerCase().contains("o") && s.length() > 5)
                 .collect(Collectors.toList());
 
         System.out.println(result);
